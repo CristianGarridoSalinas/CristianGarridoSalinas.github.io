@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour 360</title>
+    <link rel="stylesheet" href="css/pannellum.css">
+    <script type="application/javascript" src="js/vendor/pannellum.js"></script>
+    <style>
+        #panorama {
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="panorama"></div>
+
+    <script>
+        
+        
+        pannellum.viewer('panorama', {
+            "type": "equirectangular",
+            "panorama": "/images/santuario-frente.jpg",
+            "title": "Santuario de la Virgen del Transito de Metrenco",
+            "author": "Cristian Garrido"
+        });
+        
+
+    </script>
+</body>
+
+</html>
